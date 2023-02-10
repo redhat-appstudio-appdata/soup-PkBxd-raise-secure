@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: application-service-gqoy
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ralphjbean-tenant-application-service-gqoy
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e553e08316469eedad61195a18313e2e04248f6b55fdb8fc2881880067c1ce8f
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
