@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: managed-gitops-jd4d
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ralphjbean-tenant-managed-gitops-jd4d
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9d1698243f2baccf386b6b6f37cc21704476355f2982fa536687994913c26151
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
