@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: release-service-21pw
+  namespace: ralphjbean-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:86c5fe6df0a8d727b8b677ef2a10478b804dda01129ebc15fd73b7bd8c06adf8
+        name: container-image
+        resources: {}
+status: {}
