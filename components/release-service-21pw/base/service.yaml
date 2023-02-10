@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: release-service-21pw
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: release-service-21pw
+    app.kubernetes.io/part-of: soup
+  name: release-service-21pw
+  namespace: ralphjbean-tenant
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: release-service-21pw
+status:
+  loadBalancer: {}
