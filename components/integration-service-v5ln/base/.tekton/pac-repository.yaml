@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: soup
+    appstudio.openshift.io/component: integration-service-v5ln
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: integration-service-v5ln
+  namespace: ralphjbean-tenant
+spec:
+  url: https://github.com/redhat-appstudio/integration-service

@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: integration-service-v5ln
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: integration-service-v5ln
+    app.kubernetes.io/part-of: soup
+  name: integration-service-v5ln
+  namespace: ralphjbean-tenant
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: integration-service-v5ln
+    weight: 100
+status: {}
