@@ -13,7 +13,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ralphjbean-tenant-integration-service-v5ln
+      - image: quay.io/redhat-appstudio/user-workload@sha256:374d291eee82bcdbeb62b9e7deba13f73c0feb468b5c7a8d231db0d06f65c4a1
         name: container-image
         resources: {}
 status: {}
